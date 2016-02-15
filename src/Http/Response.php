@@ -42,7 +42,7 @@ class Response implements ResponseInterface
      */
     public function setCode($code)
     {
-        if(!isset(ResponseCodes::$responseCodes[$code])) {
+        if (!isset(ResponseCodes::$responseCodes[$code])) {
             throw new UnknownHTTPResponseCode(sprintf('Response code %s is not recognised', $code));
         }
         $this->code = $code;
