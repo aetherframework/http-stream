@@ -19,6 +19,7 @@ class Request implements RequestInterface
     protected $host;
     protected $protocol;
     protected $verb;
+    protected $isHttps;
 
     /**
      * Returns the query parameters as a key value pair array
@@ -92,6 +93,17 @@ class Request implements RequestInterface
     }
 
     /**
+     * @param string $key
+     * @param mixed $value
+     * @return Request
+     */
+    public function addHeaderValue($key, $value)
+    {
+         $this->headers[$key] = $value;
+        return $this;
+    }
+
+    /**
      * @return string
      */
     public function getPath()
@@ -145,6 +157,14 @@ class Request implements RequestInterface
         return $this;
     }
 
+    /**
+     * @param $isHttps
+     * @return $this
+     */
+    public function setHttps($isHttps) {
+        $this->isHttps = $isHttps;
+        return $this;
+    }
     public function isHttps()
     {
         // TODO: Implement isHttps() method.
