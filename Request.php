@@ -18,7 +18,7 @@ class Request implements RequestInterface
     protected $path;
     protected $host;
     protected $protocol;
-    protected $method;
+    protected $verb;
 
     /**
      * Returns the query parameters as a key value pair array
@@ -130,37 +130,30 @@ class Request implements RequestInterface
     /**
      * @return string
      */
-    public function getProtocol()
+    public function getVerb()
     {
-        return $this->protocol;
+        return $this->verb;
     }
 
     /**
-     * @param string $protocol
+     * @param string $verb
      * @return string
      */
-    public function setProtocol($protocol)
+    public function setVerb($verb)
     {
-        $this->protocol = $protocol;
+        $this->verb = $verb;
         return $this;
     }
 
-    /**
-     * @return string
-     */
-    public function getMethod()
+    public function isHttps()
     {
-        return $this->method;
+        // TODO: Implement isHttps() method.
     }
 
-    /**
-     * @param string $method
-     * @return string
-     */
-    public function setMethod($method)
+    public function getFullyQualifiedUri()
     {
-        $this->method = $method;
-        return $this;
+        // TODO: Implement getFullyQualifiedUri() method.
     }
+
 }
 
