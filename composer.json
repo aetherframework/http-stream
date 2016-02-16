@@ -16,7 +16,7 @@
   "suggest": {},
   "autoload": {
     "psr-4": {
-      "AetherFramework": "src/AetherFramework"
+      "AetherFramework\": "src/AetherFramework"
     }
   }
 }
