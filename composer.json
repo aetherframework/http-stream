@@ -11,7 +11,7 @@
     "delphicokami/aether-framework-base": "^0.0.1"
   },
   "require-dev": {
-    "phpunit/phpunit": "^5.0",1
+    "phpunit/phpunit": "^5.0",
     "symfony/yaml": "^3.0"
   },
   "suggest": {},
