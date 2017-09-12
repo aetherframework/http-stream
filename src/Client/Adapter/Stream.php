@@ -14,7 +14,6 @@ use AetherFramework\Http\ClientInterface;
 use AetherFramework\Http\Request;
 use AetherFramework\Http\RequestInterface;
 use AetherFramework\Http\Response;
-use AetherFramework\Http\ResponseInterface;
 
 class Stream implements ClientInterface
 {

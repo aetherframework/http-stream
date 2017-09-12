@@ -108,6 +108,9 @@ class Request implements RequestInterface
      */
     public function getPath()
     {
+        if (null === $this->path) {
+            $this->path = '/';
+        }
         return $this->path;
     }
 
@@ -173,7 +176,26 @@ class Request implements RequestInterface
 
     public function getFullyQualifiedUri()
     {
-        // TODO: Implement getFullyQualifiedUri() method.
+        $fullUri = sprintf(
+            '%s://%s%s',
+                $this->isHttps() ? 'https' : 'http',
+            $this->getHost(),
+            $this->getPath()
+        );
+        $queryParameters = $this->getQuery();
+        if (0 < count($queryParameters)) {
+            $queryString = '';
+            foreach ($queryParameters as $parameterName => $parameterValue) {
+                $queryString .= sprintf(
+                    '%s=%s&',
+                        $parameterName,
+                        $parameterValue
+                );
+            }
+            $queryString = rtrim($queryString, '&');
+            return $fullUri . '?' . $queryString;
+        }
+        return $fullUri;
     }
 
 }
