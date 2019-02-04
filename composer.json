@@ -31,7 +31,7 @@
   "suggest": {},
   "autoload": {
     "psr-4": {
-      "AetherFramework\\Http\\": "src"
+      "Aether\\Http\\": "src"
     }
   }
 }
