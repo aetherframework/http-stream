@@ -171,7 +171,7 @@ class Request implements RequestInterface
 
     public function isHttps()
     {
-        return $this->isHttps();
+        return $this->isHttps;
     }
 
     public function getFullyQualifiedUri()
