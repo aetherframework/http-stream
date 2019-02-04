@@ -6,7 +6,7 @@
  * Time: 18:40
  */
 
-namespace AetherFramework\Http\Exception;
+namespace Aether\Http\Exception;
 
 
 class RequestTimeout extends \Exception

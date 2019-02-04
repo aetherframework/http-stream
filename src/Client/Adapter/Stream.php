@@ -6,14 +6,14 @@
  * Time: 17:59
  */
 
-namespace AetherFramework\Http\Client\Adapter;
+namespace Aether\Http\Client\Adapter;
 
 
-use AetherFramework\Http\Exception;
-use AetherFramework\Http\ClientInterface;
-use AetherFramework\Http\Request;
-use AetherFramework\Http\RequestInterface;
-use AetherFramework\Http\Response;
+use Aether\Http\Exception;
+use Aether\Http\ClientInterface;
+use Aether\Http\Request;
+use Aether\Http\RequestInterface;
+use Aether\Http\Response;
 
 class Stream implements ClientInterface
 {

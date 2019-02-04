@@ -1,5 +1,5 @@
 <?php
-namespace AetherFramework\Http;
+namespace Aether\Http;
 
 use Http\Exception\UnknownHTTPResponseCode;
 

@@ -6,7 +6,7 @@
  * Time: 18:16
  */
 
-namespace AetherFramework\Http;
+namespace Aether\Http;
 
 
 class Request implements RequestInterface
