@@ -6,7 +6,7 @@
  * Time: 18:40
  */
 
-namespace Aether\Http\Exception;
+namespace AEtherFramework\Http\Exception;
 
 
 class UnableToConnectToServer extends \Exception

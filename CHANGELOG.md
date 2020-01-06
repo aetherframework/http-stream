@@ -6,7 +6,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [v0.0.1] - 2017-09-12
 ### Added
-- Stream implementation for Aether framework HTTP interface 
+- Stream implementation for AEtherFramework framework HTTP interface 
 
 
 [Unreleased]: https://github.com/DelphicOkami/aether-framework-http/compare/v0.0.1...HEAD

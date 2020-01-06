@@ -23,7 +23,7 @@
             "type": "library",
             "autoload": {
                 "psr-4": {
-                    "Aether\\": "src"
+                    "AEtherFramework\\": "src"
                 }
             },
             "license": [
