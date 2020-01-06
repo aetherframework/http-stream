@@ -177,13 +177,13 @@ class Request implements RequestInterface
     public function getFullyQualifiedUri()
     {
         $fullUri = sprintf(
-            '%s://%s%s',
+            '%s://%s/%s',
                 $this->isHttps() ? 'https' : 'http',
             $this->getHost(),
-            $this->getPath()
+            ltrim($this->getPath(), '/')
         );
         $queryParameters = $this->getQuery();
-        if (0 < count($queryParameters)) {
+        if (null != $queryParameters && 0 < count($queryParameters)) {
             $queryString = '';
             foreach ($queryParameters as $parameterName => $parameterValue) {
                 $queryString .= sprintf(

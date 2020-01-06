@@ -28,13 +28,11 @@ class Stream implements ClientInterface
      */
     public function send(RequestInterface $request)
     {
-        $headers = array_reduce(
-            $request->getHeaders(),
-            function($carry, $header, $headerKey) {
-                $carry .= "{$headerKey}: {$header}\r\n";
-            },
-            ''
-        );
+        $headers = '';
+        foreach($request->getHeaders() as $headerKey=>$header) {
+            $headers .= "{$headerKey}: {$header}\r\n";
+        }
+
         $startTime = time();
         $responseContents = file_get_contents(
             $request->getFullyQualifiedUri(),
