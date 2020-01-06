@@ -1,24 +1,10 @@
 {
-  "name": "delphicokami/aether-framework-http-stream",
+  "name": "aetherframework/http-stream",
   "license": "LGPL-3.0+",
-  "repositories": [
-    {
-      "type": "vcs",
-      "url": "git@github.com:DelphicOkami/aether-framework-http-stream.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:DelphicOkami/aether.git"
-    },
-    {
-      "type": "vcs",
-      "url": "git@github.com:DelphicOkami/aether-framework-config.git"
-    }
-  ],
   "authors": [
     {
       "name": "Micheal Wilkinson",
-      "email": "aether-framework@hrafn.xyz"
+      "email": "aetherframework@hrafn.xyz"
     }
   ],
   "require": {
