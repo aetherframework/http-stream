@@ -11,5 +11,8 @@ namespace AEtherFramework\Http\Exception;
 
 class RequestTimeout extends \Exception
 {
-
+    public function __construct($message = "", $code = 504, \Throwable $previous = null)
+    {
+        parent::__construct($message, $code, $previous);
+    }
 }
